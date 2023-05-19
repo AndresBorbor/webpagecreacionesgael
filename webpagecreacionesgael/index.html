@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciones Gael</title>
+    
+    <script src="https://kit.fontawesome.com/2a552c16a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="./src/scripts/scrollreveal.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1 class="main-title">Creaciones Gael</h1>
+        <i  class="fa-solid fa-bars btn-open-menu"></i>
+        <nav class="menu">
+            <i onclick=toggleMenu() class="fa-solid fa-xmark btn-close-menu"></i>
+            <li><a onclick=toggleMenu() href="">Inicio</a></li>
+            <li><a onclick=toggleMenu() class='catalogue-nav' href="#catalogue">Catálogo</a></li>
+            <li><a onclick=toggleMenu() href="#about">Acerca de</a></li>
+            <li><a onclick=toggleMenu() href="#contact">Contacto</a></li>
+        </nav>
+    </header>
+    <section>
+        
+        <div class="section catalogue" id="catalogue">
+            <h2 class="title">Trabajos</h2>
+            <div class="catalogue-options">
+                
+                <div class="search">
+                    <input type="text" name='search-bar' class="search-bar" placeholder="Buscar producto">
+                    <input type="submit" value="Buscar" class="btn-submit">
+                </div>
+                <div class="filter-orderby">
+                    <label for="" class="lbl-select">Filtrar por :
+                        <select name="" id="" class="select filter" >
+                            <option value=""></option>
+                            <option value="DECORACION" >Decoracion</option>
+                            <option value="EVENTO">Evento</option>
+                            <option value="ESCOLAR">Escolar</option>
+                        </select>
+                    </label>
+                    
+                    <label for="" class="lbl-select">Ordenar por:
+                        <select name="" id="" class="select order" >
+                            <option value="" ></option>
+                            <option value="name" >Nombre</option>
+                            <option value="price">Precio</option>
+                        </select>
+                    </label>
+                    
+                </div> 
+            </div>
+
+            <div class="container">
+                
+            </div>
+        </div>
+        <div class="section about" id="about">
+            <h2 class="title">Acerca de</h2>
+            <div class="about-info">
+                <h3 class="title">CREACIONES GAEL </br> </br>  </h3>
+                <p> Somos un bazar que elabora manualidades en fomix para tareas escolares, fiestas de cumpleaños o decoraciones bajo pedido, además de vender productos ya elaborados con anterioridad como decoraciones pequeñas variadas. <br/> Estamos ubicados en La Liberdad, barrio General Enríquez Gallo, Av. 16, calle 36</p>
+            </div>
+            <img src="src/assets/storeImage.jpg" loading="lazy" alt="storage-image" class="about-img">
+        </div>
+    </section>
+    <footer>
+        <div class="section contact" id="contact">
+            <a class="contact-info" >
+                <i class="fa-brands fa-whatsapp contact-logo" ></i>
+                <p>+593 99 441 3157</p>
+            </a>
+            <a class="contact-info" href="https://www.facebook.com/santiago.gael.169" target="_blank">
+                <i class="fa-brands fa-facebook contact-logo"></i>
+                <p>Shirley Gael</p>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+    <script src="./src/scripts/work.js"></script>
+    <script src="./src/scripts/search.js"></script>
+    <script src="./src/scripts/scrollAnimations.js"></script>
+</body>
+</html>
